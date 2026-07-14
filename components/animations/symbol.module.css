@@ -1,0 +1,22 @@
+.symbol {
+  position: absolute;
+  font-size: 24px;
+  color: lime;
+  opacity: 0;
+  animation: popFade 1.5s ease-out forwards;
+}
+
+@keyframes popFade {
+  0% {
+    opacity: 1;
+    transform: scale(0.2); /* start tiny */
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.4); /* grow big */
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.1); /* shrink again */
+  }
+}

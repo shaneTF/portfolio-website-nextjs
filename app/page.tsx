@@ -8,6 +8,7 @@
  *
  */
 
+import SymbolSpawner from "@/components/animations/symbol-spawner";
 import classes from "./page.module.css";
 
 export default function Home() {
@@ -21,10 +22,15 @@ export default function Home() {
         </div>
         <div className={classes.mainContainer}>
           <main className={classes.mainHome}>
-            <strong>
-              <h1>Shane Franklin</h1>
-            </strong>
-            <p>Full Stack Web Developer</p>
+            <div className={classes.symbolContainer}>
+              <strong>
+                <h1>Shane Franklin</h1>
+              </strong>
+              <p>Full Stack Web Developer</p>
+
+              <SymbolSpawner />
+            </div>
+
             <div>
               <p>About me button</p>
             </div>

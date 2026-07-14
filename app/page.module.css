@@ -4,20 +4,36 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .headerContainer {
-  height: 10%;
+  padding: 0;
   justify-content: center;
   align-items: center;
 }
 
 .mainContaier {
-  height: 40%;
+  padding: 0;
   justify-content: center;
   align-items: center;
 }
 
 .mainHome {
   text-align: center;
+}
+
+.mainHome h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.symbolContainer {
+  position: relative;
+  z-index: 10;
+}
+
+.symbol {
+  position: absolute;
+  z-index: 5;
 }
