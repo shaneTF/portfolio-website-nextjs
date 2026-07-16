@@ -7,16 +7,8 @@
   color: white;
 }
 
-.headerContainer {
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainContaier {
-  padding: 0;
-  justify-content: center;
-  align-items: center;
+.headerHome {
+  margin-bottom: 1rem;
 }
 
 .mainHome {
@@ -46,7 +38,29 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-.symbol {
+.nameField {
+  display: inline-block;
+  position: relative;
+  min-height: 95px;
+  overflow: hidden;
+}
+
+.typewriterOverlay {
   position: absolute;
-  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.typewriterOverlay h1 {
+  margin: 0;
+}
+
+.namePlaceholder {
+  opacity: 0;
+  display: block;
+  line-height: 1;
+  white-space: nowrap;
+  font-size: 80px;
+  font-weight: 700;
 }
