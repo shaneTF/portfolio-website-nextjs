@@ -26,9 +26,11 @@ export default function Home() {
               <strong>
                 <h1>Shane Franklin</h1>
               </strong>
-              <p>Full Stack Web Developer</p>
 
               <SymbolSpawner />
+            </div>
+            <div>
+              <p>Full Stack Web Developer</p>
             </div>
 
             <div>

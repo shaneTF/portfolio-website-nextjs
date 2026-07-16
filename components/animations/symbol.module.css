@@ -1,9 +1,15 @@
 .symbol {
   position: absolute;
   font-size: 24px;
-  color: lime;
+  color: var(--symbol-color, rgb(253, 32, 32));
   opacity: 0;
   animation: popFade 1.5s ease-out forwards;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
 @keyframes popFade {
@@ -13,7 +19,7 @@
   }
   40% {
     opacity: 1;
-    transform: scale(1.4); /* grow big */
+    transform: scale(0.9); /* grow big */
   }
   100% {
     opacity: 0;
