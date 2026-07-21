@@ -15,6 +15,14 @@
   text-align: center;
 }
 
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
 .mainHome h1 {
   font-size: 80px;
   margin: 0;

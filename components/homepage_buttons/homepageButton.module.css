@@ -1,0 +1,14 @@
+.hoverButton {
+  border-radius: 2rem !important;
+  border-color: #ffffff3f !important;
+  background-color: transparent;
+  color: white !important;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+
+.hoverButton:hover {
+  color: white;
+  background-color: #9257ff;
+  border-color: white;
+}

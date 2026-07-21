@@ -11,6 +11,7 @@
 import SymbolSpawner from "@/components/animations/symbol-spawner";
 import classes from "./page.module.css";
 import Typewriter from "@/components/animations/typewriter";
+import HomepageButtons from "@/components/homepage_buttons/homepage-button";
 
 export default function Home() {
   return (
@@ -31,11 +32,12 @@ export default function Home() {
             <SymbolSpawner />
           </div>
           <div>
-            <p>Full Stack Web Developer</p>
+            <p>Software Developer</p>
           </div>
 
-          <div>
-            <p>About me button</p>
+          <div className={classes.buttonRow}>
+            <HomepageButtons title="About Me" page="/about_me" />
+            <HomepageButtons title="Resume" page="/resume" />
           </div>
         </main>
       </div>
