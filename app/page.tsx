@@ -1,13 +1,3 @@
-/*
- * Later desires, Just get the page working for now.
- * Simple video game like loading screen on loading
- * Simple pixel character will run down the edge of page when scrolling
- * -----------------------------------------------------------------------
- * Page should display a simple description, similar to the one on Resume.
- * Nav links should be available on all pages, add to layout page.
- *
- */
-
 import SymbolSpawner from "@/components/animations/symbol-spawner";
 import classes from "./page.module.css";
 import Typewriter from "@/components/animations/typewriter";
@@ -36,7 +26,6 @@ export default function Home() {
           </div>
 
           <div className={classes.buttonRow}>
-            <HomepageButtons title="About Me" page="/about_me" />
             <HomepageButtons title="Resume" page="/resume" />
           </div>
         </main>

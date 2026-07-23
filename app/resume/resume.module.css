@@ -1,0 +1,20 @@
+.resumeContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: min(90vw, 900px);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+}
+
+.briefDescription {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}

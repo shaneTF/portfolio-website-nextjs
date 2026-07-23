@@ -15,6 +15,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Shane Franklin Portfolio",
   description: "Portfolio of my works and an example in and of itself.",
+  icons: {
+    icon: "data:,",
+  },
 };
 
 export default function RootLayout({
