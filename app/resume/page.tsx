@@ -1,5 +1,6 @@
 import { briefBackground } from "@/utils/constants";
 import classes from "./resume.module.css";
+import WorkExperience from "./work-experience";
 
 export default function Page() {
   return (
@@ -14,7 +15,7 @@ export default function Page() {
       </section>
 
       <section>
-        <p>List of previous work experience</p>
+        <WorkExperience />
       </section>
       <section>
         <p>List of Skills</p>
