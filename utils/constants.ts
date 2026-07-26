@@ -93,22 +93,20 @@ export const workExperience = [
   },
 ];
 
-export const skills = [
-  {
-    languages: ["Javascript", "Typescript", "Python"],
-    frameworks: ["React.js", "Vue.js", "Next.js"],
-    libraries: ["MaterialUI", "TailwindCSS"],
-    apis: ["RESTful API's"],
-    tools: ["Git", "Github", "Figma", "VScode"],
+export const skills = {
+  languages: ["Javascript", "Typescript", "Python"],
+  frameworks: ["React.js", "Vue.js", "Next.js"],
+  libraries: ["MaterialUI", "TailwindCSS"],
+  apis: ["RESTful API's"],
+  tools: ["Git", "Github", "Figma", "VScode"],
 
-    practices: [
-      "Agile/Scrum",
-      "Unit Testing",
-      "CI/CD",
-      "Component-Based Architecture",
-    ],
-  },
-];
+  practices: [
+    "Agile/Scrum",
+    "Unit Testing",
+    "CI/CD",
+    "Component-Based Architecture",
+  ],
+};
 
 export const education = [
   {
