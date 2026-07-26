@@ -92,3 +92,50 @@ export const workExperience = [
       "Developed and optimized Python applications to collect, validate, and organize data from smart furnace filter systems. Designed and implemented a secondary client-facing demonstration database, enabling stakeholders to interact with and evaluate system data in a user-friendly environment.",
   },
 ];
+
+export const skills = [
+  {
+    languages: ["Javascript", "Typescript", "Python"],
+    frameworks: ["React.js", "Vue.js", "Next.js"],
+    libraries: ["MaterialUI", "TailwindCSS"],
+    apis: ["RESTful API's"],
+    tools: ["Git", "Github", "Figma", "VScode"],
+
+    practices: [
+      "Agile/Scrum",
+      "Unit Testing",
+      "CI/CD",
+      "Component-Based Architecture",
+    ],
+  },
+];
+
+export const education = [
+  {
+    school: "Ball State University",
+    location: { stateCode: "IN", city: "Muncie" },
+    graduated: true,
+    degree: "Bachelor of Science",
+    study: "Computer Science",
+    date: { startYear: "2014", endYear: "2018" },
+  },
+  {
+    school: "Indiana University",
+    location: { stateCode: "IN", city: "Bloomington" },
+    graduated: false,
+    degree: "Master of Science",
+    study: "Data Science",
+    date: { startYear: "2026", endYear: "2030" },
+  },
+];
+
+export const hobbies = [
+  {
+    games: [
+      { name: "World of Warcraft", abrev: "WoW" },
+      { name: "Call of Duty Zombies", abrev: "COD Zombies" },
+    ],
+  },
+  { social: [{ name: "Dungeons and Dragons", abrev: "DnD" }] },
+  { graphicDesign: [{ name: "Clip Studio Paint", abrev: "CSP" }] },
+];
