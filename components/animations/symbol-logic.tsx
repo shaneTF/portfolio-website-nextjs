@@ -65,5 +65,5 @@ export default function SymbolLogic() {
     return () => clearInterval(interval);
   }, []);
 
-  return <div ref={containerRef} className={styles.overlay}></div>;
+  return <div ref={containerRef} className={classes.overlay}></div>;
 }

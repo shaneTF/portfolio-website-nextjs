@@ -27,6 +27,7 @@ export default function Home() {
 
           <div className={classes.buttonRow}>
             <HomepageButtons title="Resume" page="/resume" />
+            <HomepageButtons title="Projects" page="/github_projects" />
           </div>
         </main>
       </div>
