@@ -1,7 +1,7 @@
 "use Client";
 
 import { useEffect, useRef } from "react";
-import styles from "./symbol.module.css";
+import classes from "./symbol.module.css";
 import { webDevSymbols } from "@/utils/constants";
 
 type Point = { x: number; y: number };
@@ -44,7 +44,7 @@ export default function SymbolLogic() {
       } while (isTooClose(x, y) && attempts < 15);
 
       const elem = document.createElement("div");
-      elem.className = styles.symbol;
+      elem.className = classes.symbol;
       elem.textContent = getRandomSymbol();
       elem.style.setProperty("--symbol-color", getRandomColor());
 

@@ -1,3 +1,14 @@
+import { AiOutlineApi } from "react-icons/ai";
+import { BsTypescript } from "react-icons/bs";
+import { DiScrum } from "react-icons/di";
+import { FaFigma, FaGitAlt, FaGithub, FaVial, FaVuejs } from "react-icons/fa6";
+import { IoLogoJavascript, IoLogoReact } from "react-icons/io5";
+import { LuBrickWall } from "react-icons/lu";
+import { MdSync } from "react-icons/md";
+import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { SiMui, SiPythonanywhere } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+
 export const webDevSymbols = [
   "<",
   ">",
@@ -94,17 +105,33 @@ export const workExperience = [
 ];
 
 export const skills = {
-  languages: ["Javascript", "Typescript", "Python"],
-  frameworks: ["React.js", "Vue.js", "Next.js"],
-  libraries: ["MaterialUI", "TailwindCSS"],
-  apis: ["RESTful API's"],
-  tools: ["Git", "Github", "Figma", "VScode"],
+  languages: [
+    { name: "Javascript", icon: IoLogoJavascript },
+    { name: "Typescript", icon: BsTypescript },
+    { name: "Python", icon: SiPythonanywhere },
+  ],
+  frameworks: [
+    { name: "React.js", icon: IoLogoReact },
+    { name: "Vue.js", icon: FaVuejs },
+    { name: "Next.js", icon: RiNextjsLine },
+  ],
+  libraries: [
+    { name: "MaterialUI", icon: SiMui },
+    { name: "TailwindCSS", icon: RiTailwindCssFill },
+  ],
+  apis: [{ name: "RESTful API's", icon: AiOutlineApi }],
+  tools: [
+    { name: "Git", icon: FaGitAlt },
+    { name: "Github", icon: FaGithub },
+    { name: "Figma", icon: FaFigma },
+    { name: "VScode", icon: VscVscode },
+  ],
 
   practices: [
-    "Agile/Scrum",
-    "Unit Testing",
-    "CI/CD",
-    "Component-Based Architecture",
+    { name: "Agile/Scrum", icon: DiScrum },
+    { name: "Unit Testing", icon: FaVial },
+    { name: "CI/CD", icon: MdSync },
+    { name: "Component-Based Architecture", icon: LuBrickWall },
   ],
 };
 

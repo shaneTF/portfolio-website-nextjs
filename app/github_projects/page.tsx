@@ -1,3 +1,8 @@
 export default function Page() {
-  return <div>Github</div>;
+  return (
+    <div>
+      <div>Projects</div>
+      <div></div>
+    </div>
+  );
 }

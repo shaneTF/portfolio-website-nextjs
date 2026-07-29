@@ -1,0 +1,70 @@
+.workExperienceHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.workExperienceList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.workExperienceItem {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.workHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.position {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.duration {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.72);
+  white-space: nowrap;
+}
+
+.employerRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.96rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.employer {
+  font-weight: 600;
+  color: #fff;
+}
+
+.location {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.description {
+  margin: 0;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.9);
+}

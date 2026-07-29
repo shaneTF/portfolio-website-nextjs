@@ -8,25 +8,22 @@ export default function Page() {
   return (
     <div className={classes.resumeContainer}>
       <section>
-        <h1>Resume</h1>
-        <div>About Me</div>
+        <h1 className={classes.resumeTitle}>Experience</h1>
       </section>
 
       <section>
+        <h2 className={classes.summaryHeader}>Summary</h2>
         <p className={classes.briefDescription}>{briefBackground}</p>
       </section>
 
       <section>
-        <WorkExperience />
-      </section>
-      <section>
         <Skills />
       </section>
       <section>
-        <Education />
+        <WorkExperience />
       </section>
       <section>
-        <p>Hobbies</p>
+        <Education />
       </section>
     </div>
   );
