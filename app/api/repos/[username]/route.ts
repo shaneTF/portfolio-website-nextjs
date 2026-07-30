@@ -7,7 +7,7 @@ export async function GET(
   const { username } = await params;
 
   const res = await fetch(
-    `https://api.github.com/users/${username}/repos?per_page=100`,
+    `https://api.github.com/users/${username}/repos?sort=push&direction=desc&per_page=6`,
     {
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,

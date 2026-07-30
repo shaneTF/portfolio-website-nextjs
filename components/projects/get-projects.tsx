@@ -1,3 +1,6 @@
+import RepoCard from "./RepoCard";
+import classes from "./projects.module.css";
+
 type Repo = {
   id: number;
   name: string;
@@ -18,18 +21,16 @@ export default async function Projects({
   const repos: Repo[] = Array.isArray(reposJson) ? reposJson : [];
 
   return (
-    <div>
-      <ul>
-        {Array.isArray(repos) ? (
-          repos.map((repo) => (
-            <li key={repo.id}>
-              <a href={repo.html_url}>{repo.name}</a>
-            </li>
-          ))
-        ) : (
-          <div>No repos found</div>
-        )}
-      </ul>
+    <div className={classes.container}>
+      {Array.isArray(repos) && repos.length > 0 ? (
+        <div className={classes.list}>
+          {repos.map((repo) => (
+            <RepoCard key={repo.id} repo={repo} />
+          ))}
+        </div>
+      ) : (
+        <div className={classes.empty}>No repos found</div>
+      )}
     </div>
   );
 }
