@@ -22,6 +22,7 @@ export default async function Projects({
 
   return (
     <div className={classes.container}>
+      <h1>Projects</h1>
       {Array.isArray(repos) && repos.length > 0 ? (
         <div className={classes.list}>
           {repos.map((repo) => (
