@@ -20,11 +20,9 @@ export default function RepoCard({ repo }: { repo: Repo }) {
   return (
     <Card className={classes.card}>
       <CardContent>
-        <CardActions>
-          <Button href={repo.html_url} className={classes.link}>
-            {repo.name}
-          </Button>
-        </CardActions>
+        <Typography variant="h6" className={classes.title}>
+          {repo.name}
+        </Typography>
         <Typography className={classes.description}>
           {repo.description ?? "No description provided."}
         </Typography>

@@ -23,10 +23,19 @@ export default async function Projects({
   return (
     <div className={classes.container}>
       <h1>Projects</h1>
+      <p>Some recent projects I have worked on and uploaded to GitHub:</p>
       {Array.isArray(repos) && repos.length > 0 ? (
         <div className={classes.list}>
           {repos.map((repo) => (
-            <RepoCard key={repo.id} repo={repo} />
+            <a
+              key={repo.id}
+              className={classes.item}
+              href={repo.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <RepoCard repo={repo} />
+            </a>
           ))}
         </div>
       ) : (

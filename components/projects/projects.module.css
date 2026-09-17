@@ -19,13 +19,16 @@
 
 .item {
   margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .card {
   background: #000000 !important;
   color: #ffffff;
   padding: 1rem;
-  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 2rem !important;
@@ -47,4 +50,15 @@
 
 .empty {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+  text-transform: Capitalize;
 }
