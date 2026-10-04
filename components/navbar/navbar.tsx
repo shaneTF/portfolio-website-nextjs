@@ -7,7 +7,7 @@ const navLinks = [
   { title: "Home", href: "/" },
   { title: "Resume", href: "/resume" },
   { title: "Projects", href: "/github_projects" },
-  { title: "Contact", href: "/contact" },
+  { title: "Contact", href: "/contact_me" },
 ];
 
 export default function Navbar() {
