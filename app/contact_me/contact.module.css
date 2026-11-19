@@ -1,0 +1,152 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - 64px);
+  width: min(90vw, 900px);
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1.5rem;
+}
+
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.contactTitle {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.contactTagline {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.6;
+}
+
+.contactCard {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.description {
+  margin: 0;
+  text-align: center;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.platformSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.platformTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.platformList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.platform {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: default;
+}
+
+.platformList .platform {
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.platformList .platform:hover {
+  border-color: rgba(56, 189, 248, 0.55);
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  transform: translateY(-2px);
+}
+
+.formSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.formSection :global(.MuiButton-root) {
+  border-radius: 18px;
+  background: #1e90ff;
+  padding: 0.75rem 1.5rem;
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.25);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.formSection :global(.MuiButton-root:hover) {
+  background: #1875d1;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .contactContainer {
+    min-height: calc(100svh - 60px);
+    width: min(94vw, 900px);
+    padding: 1.5rem 0.25rem 2rem;
+  }
+
+  .contactCard {
+    padding: 1.25rem;
+  }
+
+  .platformList {
+    width: 100%;
+  }
+
+  .platform {
+    flex: 1 1 120px;
+    min-height: 2.75rem;
+    overflow-wrap: anywhere;
+  }
+}

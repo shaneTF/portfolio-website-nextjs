@@ -3,6 +3,7 @@ import { JetBrains_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import Navbar from "../components/navbar/Navbar";
+import LavaLampBackground from "@/components/lavalamp_background/LavaLampBackground";
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetBrainsMono",
@@ -33,9 +34,11 @@ export default function RootLayout({
       className={`${jetBrainsMono.variable} ${openSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar />
-
-        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+        <LavaLampBackground />
+        <div className="page-content">
+          <Navbar />
+          <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+        </div>
       </body>
     </html>
   );

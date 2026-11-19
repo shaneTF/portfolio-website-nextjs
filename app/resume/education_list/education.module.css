@@ -82,3 +82,22 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 600px) {
+  .educationItem {
+    padding: 1rem;
+  }
+
+  .educationHeader {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .school {
+    overflow-wrap: anywhere;
+  }
+
+  .date {
+    font-size: 0.9rem;
+  }
+}

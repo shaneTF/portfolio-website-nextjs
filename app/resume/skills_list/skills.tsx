@@ -17,7 +17,7 @@ export default function Skills() {
               return (
                 <li key={lang.name} className={classes.skillItem}>
                   <Icon />
-                  {lang.name}
+                  <span>{lang.name}</span>
                 </li>
               );
             })}
@@ -32,7 +32,7 @@ export default function Skills() {
               return (
                 <li key={frame.name} className={classes.skillItem}>
                   <Icon />
-                  {frame.name}
+                  <span>{frame.name}</span>
                 </li>
               );
             })}
@@ -47,7 +47,7 @@ export default function Skills() {
               return (
                 <li key={lib.name} className={classes.skillItem}>
                   <Icon />
-                  {lib.name}
+                  <span>{lib.name}</span>
                 </li>
               );
             })}
@@ -62,7 +62,7 @@ export default function Skills() {
               return (
                 <li key={api.name} className={classes.skillItem}>
                   <Icon />
-                  {api.name}
+                  <span>{api.name}</span>
                 </li>
               );
             })}
@@ -77,7 +77,7 @@ export default function Skills() {
               return (
                 <li key={tool.name} className={classes.skillItem}>
                   <Icon />
-                  {tool.name}
+                  <span>{tool.name}</span>
                 </li>
               );
             })}
@@ -92,7 +92,7 @@ export default function Skills() {
               return (
                 <li key={practice.name} className={classes.skillItem}>
                   <Icon />
-                  {practice.name}
+                  <span>{practice.name}</span>
                 </li>
               );
             })}

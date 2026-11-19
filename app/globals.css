@@ -1,4 +1,18 @@
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: var(--font-open-sans), Arial, Helvetica, sans-serif;
   background: #1c0d61;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }

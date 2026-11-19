@@ -1,5 +1,10 @@
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   width: fit-content;
+  max-width: calc(100vw - 1rem);
+  box-sizing: border-box;
   margin-inline: auto;
   justify-content: center;
   background-color: #1e293ba8;
@@ -34,4 +39,23 @@
 
 .nav-links a.active {
   color: #38bdf8;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.85rem 1rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: clamp(0.75rem, 4vw, 1.5rem);
+    row-gap: 0.5rem;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    min-height: 2rem;
+    align-items: center;
+  }
 }

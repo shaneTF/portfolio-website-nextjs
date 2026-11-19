@@ -55,11 +55,31 @@
 .skillItem {
   display: inline-flex;
   align-items: center;
+  flex-wrap: nowrap;
+  min-width: 0;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
   gap: 0.5rem;
   padding: 0.35rem 0.5rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.06);
   font-size: 0.95rem;
+}
+
+.skillItem :global(svg) {
+  flex: 0 0 auto;
+}
+
+.skillItem span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .skillCard {
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 900px) {

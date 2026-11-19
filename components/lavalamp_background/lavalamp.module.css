@@ -1,0 +1,40 @@
+.lava-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+
+  filter: url(#gooey);
+}
+
+.lava-container::before {
+  content: "";
+  position: absolute;
+  left: -30%;
+  bottom: -8vh;
+  width: 160%;
+  height: 10vh;
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  background: linear-gradient(135deg, #5c01c4ad, #0300a7a2);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+
+  background: linear-gradient(135deg, #5c01c4ad, #0300a7a2);
+
+  opacity: 0.9;
+}
+
+.blob-1 {
+  width: 140px;
+  height: 140px;
+  transform: translate3d(10vw, 92vh, 0);
+}
+
+.blob-2 {
+  width: 160px;
+  height: 160px;
+  transform: translate3d(70vw, 92vh, 0);
+}

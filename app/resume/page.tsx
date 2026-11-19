@@ -25,6 +25,10 @@ export default function Page() {
       <section>
         <Education />
       </section>
+      <h1>Download a copy!</h1>
+      <a href="/Shane_Franklin_Software_Engineer.pdf" download>
+        <button className={classes.downloadButton}>Resume copy</button>
+      </a>
     </div>
   );
 }
