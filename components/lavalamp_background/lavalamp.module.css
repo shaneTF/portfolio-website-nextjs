@@ -1,40 +1,141 @@
-.lava-container {
+.lava-bg {
   position: fixed;
   inset: 0;
   overflow: hidden;
-  z-index: 0;
-
-  filter: url(#gooey);
+  z-index: -1;
 }
 
-.lava-container::before {
-  content: "";
-  position: absolute;
-  left: -30%;
-  bottom: -8vh;
-  width: 160%;
-  height: 10vh;
-  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
-  background: linear-gradient(135deg, #5c01c4ad, #0300a7a2);
-}
-
+/* Shared blob styles */
 .blob {
   position: absolute;
-  border-radius: 9999px;
+  border-radius: 50%;
 
-  background: linear-gradient(135deg, #5c01c4ad, #0300a7a2);
+  filter: blur(20px);
+  opacity: 0.8;
 
-  opacity: 0.9;
+  will-change: transform;
+  transform: translateZ(0);
+  mix-blend-mode: lighten;
 }
 
+/* Orange */
 .blob-1 {
-  width: 140px;
-  height: 140px;
-  transform: translate3d(10vw, 92vh, 0);
+  width: 400px;
+  height: 350px;
+
+  background: #ff5e00;
+
+  left: 10%;
+  bottom: -10%;
+
+  animation: rise1 18s ease-in-out infinite;
 }
 
+/* Pink */
 .blob-2 {
-  width: 160px;
-  height: 160px;
-  transform: translate3d(70vw, 92vh, 0);
+  width: 550px;
+  height: 450px;
+
+  background: #ff006e;
+
+  left: 50%;
+  bottom: -20%;
+
+  animation: rise2 28s ease-in-out infinite;
+}
+
+/* Purple */
+.blob-3 {
+  width: 500px;
+  height: 500px;
+
+  background: #8338ec;
+
+  right: -10%;
+  bottom: 20%;
+
+  animation: drift 28s ease-in-out infinite;
+}
+
+/* Accent */
+.blob-4 {
+  width: 400px;
+  height: 400px;
+
+  background: #ffbe0b;
+
+  left: 40%;
+  top: 20%;
+
+  animation: drift2 28s ease-in-out infinite;
+}
+
+/* Blue */
+.blob-5 {
+  width: 430px;
+  height: 380px;
+
+  background: #3a86ff;
+
+  left: -5%;
+  top: 10%;
+
+  animation: drift2 32s ease-in-out infinite;
+}
+
+/* Teal */
+.blob-6 {
+  width: 400px;
+  height: 360px;
+
+  background: #06d6a0;
+
+  left: 12%;
+  top: 50%;
+
+  animation: drift 30s ease-in-out infinite;
+}
+
+@keyframes rise1 {
+  0%,
+  100% {
+    transform: translateY(-200px) scale(1);
+  }
+
+  50% {
+    transform: translateY(-600px) scale(1.15);
+  }
+}
+
+@keyframes rise2 {
+  0%,
+  100% {
+    transform: translate(-50px, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(50px, -300px) scale(1.2);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-200px, -150px) scale(1.25);
+  }
+}
+
+@keyframes drift2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(150px, 100px) scale(0.8);
+  }
 }
