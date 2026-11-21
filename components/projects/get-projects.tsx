@@ -13,12 +13,29 @@ export default async function Projects({
 }: {
   params: { username: string };
 }) {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/repos/${params.username}`,
-  );
-  const reposJson = await response.json();
+  let repos: Repo[] = [];
 
-  const repos: Repo[] = Array.isArray(reposJson) ? reposJson : [];
+  try {
+    const response = await fetch(
+      `https://api.github.com/users/${params.username}/repos?sort=push&direction=desc&per_page=6`,
+      {
+        headers: {
+          Authorization: process.env.GITHUB_TOKEN
+            ? `Bearer ${process.env.GITHUB_TOKEN}`
+            : "",
+          Accept: "application/vnd.github+json",
+        },
+        cache: "no-store",
+      },
+    );
+
+    if (response.ok) {
+      const reposJson = await response.json();
+      repos = Array.isArray(reposJson) ? reposJson : [];
+    }
+  } catch {
+    repos = [];
+  }
 
   return (
     <div className={classes.container}>
