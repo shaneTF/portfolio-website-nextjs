@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/components/navbar/navbar";
 import LavaLampBackground from "@/components/lavalamp_background/LavaLampBackground";
 
 const jetBrainsMono = JetBrains_Mono({
