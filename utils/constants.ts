@@ -51,14 +51,27 @@ export const briefBackground =
 
 export const workExperience = [
   {
+    title: "Store Fufillment Associate",
+    employer: "Walmart",
+    location: { city: "Martinsville", stateCode: "IN" },
+    timeFrame: {
+      startMonth: "July",
+      startYear: "2025",
+      endMonth: "Present",
+      endYear: "Present",
+    },
+    description:
+      "Responsible for fulfilling online orders, assisting customers, and maintaining a clean and organized store environment. Collaborate with team members to ensure efficient operations and provide excellent customer service.",
+  },
+  {
     title: "Freelance Web Developer",
     employer: "Self-Employed",
     location: { city: "Morgantown", stateCode: "IN" },
     timeFrame: {
       startMonth: "September",
       startYear: "2023",
-      endMonth: "Present",
-      endYear: "Present",
+      endMonth: "November",
+      endYear: "2026",
     },
     description:
       "During this career break, I have focused on expanding my technical skills through personal projects and professional development. I developed a client-facing website for a custom costume and needlework business using React, TypeScript, and Tailwind CSS, built a Discord bot that integrates with the Supercell REST API to retrieve Clash Royale statistics, and am currently developing a web-based dice rolling application for Dungeons & Dragons. I am also preparing for Power BI certification and beginning a master's degree program.",
@@ -150,7 +163,7 @@ export const education = [
     graduated: false,
     degree: "Master of Science",
     study: "Data Science",
-    date: { startYear: "2026", endYear: "2030" },
+    date: { startYear: "2026", endYear: "Present" },
   },
 ];
 
