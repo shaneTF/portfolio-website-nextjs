@@ -22,7 +22,9 @@ export default function WorkExperience() {
               </div>
               <p className={classes.duration}>
                 {job.timeFrame.startMonth} {job.timeFrame.startYear} —{" "}
-                {job.timeFrame.endMonth} {job.timeFrame.endYear}
+                {job.timeFrame.endMonth === "Present"
+                  ? job.timeFrame.endMonth
+                  : `${job.timeFrame.endMonth} ${job.timeFrame.endYear}`}
               </p>
             </div>
             <p className={classes.description}>{job.description}</p>

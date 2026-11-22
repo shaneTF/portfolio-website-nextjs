@@ -82,7 +82,7 @@ export const workExperience = [
     location: { city: "Indianapolis", stateCode: "IN" },
     timeFrame: {
       startMonth: "March",
-      startyear: "2021",
+      startYear: "2021",
       endMonth: "March",
       endYear: "2023",
     },
