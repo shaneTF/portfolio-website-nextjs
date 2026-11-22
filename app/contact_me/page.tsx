@@ -6,9 +6,9 @@ export default function ContactMe() {
     <main className={classes.contactContainer}>
       <section className={classes.contactHeader}>
         <h1 className={classes.contactTitle}>Get in Touch</h1>
-        <p className={classes.contactTagline}>
+        <h3 className={classes.contactTagline}>
           Thanks for visiting! I&apos;d like to hear from you!
-        </p>
+        </h3>
       </section>
 
       <section className={classes.contactCard}>

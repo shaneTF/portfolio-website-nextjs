@@ -17,10 +17,16 @@
 }
 
 .briefDescription {
-  max-width: 700px;
   width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 1.5rem;
   text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
 }
 
 .summaryHeader {
@@ -36,6 +42,7 @@
   font-size: clamp(1rem, 3vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03rem;
+  text-align: center;
 }
 
 .downloadButton {
@@ -64,6 +71,7 @@
   }
 
   .briefDescription {
+    padding: 1.1rem;
     line-height: 1.7;
   }
 

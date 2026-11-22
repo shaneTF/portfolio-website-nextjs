@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className={classes.homeContainer}>
         <header className={classes.headerHome}>
-          <h3 className={classes.introText}>Hello, I am</h3>
+          <h2 className={classes.introText}>Hello, I am</h2>
         </header>
         <main className={classes.mainHome}>
           <div className={classes.symbolContainer}>
@@ -21,7 +21,7 @@ export default function Home() {
 
             <SymbolSpawner />
           </div>
-          <h3 className={classes.roleText}>Software Developer</h3>
+          <h2 className={classes.roleText}>Software Developer</h2>
 
           <div className={classes.buttonRow}>
             <HomepageButtons title="Resume" page="/resume" />
